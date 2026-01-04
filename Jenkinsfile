@@ -103,7 +103,7 @@ pipeline {
                     serverUrl: 'https://440D50D3C5AFE956D6AE5085DDF14988.gr7.us-west-2.eks.amazonaws.com'
                 ) {
                     sh '''
-                        sed -i 's|replace|${IMAGE_NAME}|g' deployment.yml
+                        sed -i "s|replace|${IMAGE_NAME}|g" deployment.yml
                         kubectl apply -f deployment.yml -n ${NAMESPACE}
                     '''
                 }
