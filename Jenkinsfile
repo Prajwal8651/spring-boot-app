@@ -117,9 +117,9 @@ pipeline {
                     clusterName: 'itkannadigaru-cluster',
                     contextName: '',
                     credentialsId: 'kube',
-                    namespace: 'microdegree',
+                    namespace: 'java-blogpost',
                     restrictKubeConfigAccess: false,
-                    serverUrl: 'https://B5C5676A4A23F5E9424B27B485E2AD73.gr7.us-west-2.eks.amazonaws.com'
+                    serverUrl: 'https://440D50D3C5AFE956D6AE5085DDF14988.gr7.us-west-2.eks.amazonaws.com'
                 ) {
                     sh '''
                         kubectl get pods -n ${NAMESPACE}
