@@ -9,7 +9,7 @@ pipeline {
     environment {
         IMAGE_NAME   = "prajwal8651/itkannadigaru-blogpost:${GIT_COMMIT}"
         AWS_REGION   = "us-west-2"
-        CLUSTER_NAME = "itkannadigaru-cluster"
+        CLUSTER_NAME = "AskAI-cluster"
         NAMESPACE    = "java-blogpost"
     }
 
