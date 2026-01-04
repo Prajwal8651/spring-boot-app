@@ -122,7 +122,7 @@ pipeline {
                     serverUrl: 'https://B5C5676A4A23F5E9424B27B485E2AD73.gr7.us-west-2.eks.amazonaws.com'
                 ) {
                     sh '''
-                        kubectl get pods -n microdegree
+                        kubectl get pods -n ${NAMESPACE}
                         kubectl get svc  -n ${NAMESPACE}
                     '''
                 }
